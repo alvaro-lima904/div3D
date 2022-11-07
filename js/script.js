@@ -1,6 +1,6 @@
 $('body').mousemove(function(p) {
-    let rotateX =  -($(window).innerWidth()/2-p.pageX)/20;
-    let rotateY =  -($(window).innerHeight()/2-p.pageY)/10;
+    let rotateX = -($(window).innerHeight()/2-p.pageY)/-10;
+    let rotateY =  -($(window).innerWidth()/2-p.pageX)/20;
     $('.card').css("transform", "rotateX("+rotateX+"deg) rotateY("+rotateY+"deg)");
 });
 
